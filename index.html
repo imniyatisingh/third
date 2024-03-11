@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Chambal Safari</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="#" class="logo">Chambal Safari</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Contact-Us</a></li>
+      </ul>
+    </div>
+    <section>
+      <h2 id="text"><span>It's time for a new </span><br />Adventure</h2>
+      <img src="sources\bird1.png" id="bird1">
+      <img src="sources\bird2.png" id="bird2">
+      <img src="sources\forest.png" id="forest">
+      <a href="#" id="btn">Explore</a>
+      <img src="sources\rocks.png" id="rocks">
+      <img src="sources\water.png" id="water">
+
+    </section>
+    <div class="sec">
+        <h2>Tour of Chambal Safari</h2>
+       <p>There are many nature watching opportunities available for visitors to the National Chambal Sanctuary.<br> The best opportunities for sighting and photography of gharial and dolphins can be had by hiring a boat with a driver and guide, available at several points along the river. A boat excursion will also offer many viewpoints for photography of water and shore birds and landscapes. Walking trails in the ravines and along the river offer opportunities for close observation of the wide variety of plants and animals in the sanctuary.<br>
+
+        There are public vehicle entry points to Chambal Sanctuary at Pinahat, Nandagon Ghat, Sehson and Bharch. Boating and visiting arrangements can be made with the help of the office of the Conservator of Forests, at Kota.<br>
+        
+        Visitors may explore Ater Fort, a beautiful but dilapidated landmark and historical site near Ater town, 35 km from Bhind.<br> The fort was built by the Bhadauria kings Badan Singh, Maha Singh and Bakhat Singh in 1664-1698. The fort is situated on the banks of the Chambal River and can be reached by bus, jeep or boat.<br>
+        
+        There are forest rest houses at Bah and Chakkar Nagar and Public Works Department inspection bungalows at Bah and Pinahat. There are several commercial hotels and eco lodges at Agra, Etawah and Bah.<br> The nearest airport is at Agra. The nearest railway station is at Agra. Agra and Mathura are major rail junctions with a number of trains from all over the country.<br> Bharatpur, Ranthambhor National Park (with change at Bharatpur), Bandhavgarh National Park (Katni, Umaria) and Kanha National Park (Jabalpur) are all well serviced by the rail network from Agra.<br></p>
+
+    </div>
+    <script>
+        let text=document.getElementById('text');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let forest=document.getElementById('forest');
+        let btn=document.getElementById('btn');
+        let rocks=document.getElementById('rocks');
+        let water=document.getElementById('water');
+        let header=document.getElementById('header');
+
+        window.addEventListener('scroll',function()
+        {
+            let value=window.scrollY;
+            text.style.top=50+value*-0.5+'%';
+            bird1.style.left=value*2+'px';
+            bird1.style.top=value*-1.5+'px';
+            bird2.style.left=value*-5+'px';
+            bird2.style.top=value*-1.5+'px';
+            btn.style.marginTop=value*1.5+'px';
+            rocks.style.top=value*-0.12+'px';
+            forest.style.top=value*0.25+'px';
+            header.style.top=value*0.5+'px';
+
+
+            
+        })
+
+    </script>
+  </body>
+</html>
